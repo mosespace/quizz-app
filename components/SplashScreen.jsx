@@ -3,7 +3,7 @@ import { PiSignInBold } from "react-icons/pi";
 
 export default function SplashScreen() {
   return (
-    <div className='py-[3rem] bg-slate-50 flex flex-col items-center justify-center gap-[5rem] w-full'>
+    <div className='py-[3rem] bg-slate-50 flex flex-col items-center justify-center gap-[5rem] w-full h-screen'>
       <h2 className='font-extrabold text-[2.5rem]'>
         GPT<span className='font-medium text-black'>Quiz</span>
       </h2>
