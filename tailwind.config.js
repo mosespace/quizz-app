@@ -16,6 +16,9 @@ module.exports = {
         primary: "#00a082",
         secondary: "#ffc244",
       },
+      backgroundImage: {
+        image: "url(/3264493.jpg)",
+      },
     },
   },
   plugins: [],

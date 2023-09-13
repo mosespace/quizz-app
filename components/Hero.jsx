@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Ui from "../public/vercel.svg";
+import { usePathname } from "next/navigation";
 
 export default function Hero() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/")) return null;
   return (
     <div className='w-full bg-primary fixed text-slate-50 px-[3rem] rounded-b-[3rem] lg:rounded-none py-[1rem] flex items-center justify-between shadow-lg'>
       <h2 className='font-bold text-[1.3rem]'>
@@ -17,5 +21,5 @@ export default function Hero() {
         />
       </div>
     </div>
-  ); 
+  );
 }
