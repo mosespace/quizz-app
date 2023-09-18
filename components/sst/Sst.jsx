@@ -46,11 +46,19 @@ export default function Sst() {
     setCurrentQuestion((currentQuestion) => currentQuestion - 1);
     setAnswered(true); // Keep the answered state when moving back to a previous question
   }
-
+  function handleReplay() {
+    // This callback function resets the necessary state, allowing the user to play again.
+    setShowAnswer(false);
+    setAnswered(false);
+    setSelectedOption("");
+    setScore(0);
+    setCurrentQuestion(0);
+    setShowResults(false);
+  }
   return (
     <>
       {showResults ? (
-        <Score score={score} />
+        <Score score={score} results={handleReplay} />
       ) : (
         <div className='p-[2rem]'>
           <div className='flex flex-col gap-6'>
