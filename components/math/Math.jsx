@@ -48,10 +48,19 @@ export default function Math() {
     setAnswered(true); // Reset the answered state when moving back to a previous question
   }
 
+  function handleReplay() { // This callback function resets the necessary state, allowing the user to play again.
+    setShowAnswer(false);
+    setAnswered(false);
+    setSelectedOption("");
+    setScore(0);
+    setCurrentQuestion(0);
+    setShowResults(false);
+  }
+  
   return (
     <>
       {showResults ? (
-        <Score score={score} results={singleQuestion} />
+        <Score score={score} results={handleReplay} />
       ) : (
         <div className='p-[2rem]'>
           <div className='flex flex-col gap-6'>
@@ -117,10 +126,11 @@ export default function Math() {
                 </div>
               </div>
               <>
-                <Link href='/quizhack' className="flex items-center justify-center w-full px-[1rem] border-[3px] border-bg-primary text-slate-950  font-bold rounded-md py-[.5rem]">
-                  <button className=''>
-                    Quit Quiz
-                  </button>
+                <Link
+                  href='/quizhack'
+                  className='flex items-center justify-center w-full px-[1rem] border-[3px] border-bg-primary text-slate-950  font-bold rounded-md py-[.5rem]'
+                >
+                  <button className=''>Quit Quiz</button>
                 </Link>
               </>
             </div>
