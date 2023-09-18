@@ -8,11 +8,16 @@ export default function Score({ score, results }) {
 
   return (
     <div className=' text-center flex pt-[2rem] flex-col justify-center gap-[1.5rem] px-[3rem]'>
-      <div>
-        <Image src='/score/Score.png' alt='' />
+      <div className='relative h-[300px]'>
+        <Image
+          src='/score/Score.png'
+          alt=''
+          className='w-full h-full object-cover'
+          fill
+        />
       </div>
       <div className='font-bold flex flex-col text-2xl gap-[.5rem]'>
-        <span>John 😎</span>
+        <span>"{`{player}`}" 😎</span>
         <h2>Your Score Is {score}</h2>
       </div>
       <div className='font-bold flex flex-col gap-[1.5rem]'>
