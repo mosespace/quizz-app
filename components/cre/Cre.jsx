@@ -95,24 +95,34 @@ export default function Cre() {
                 );
               })}
             </div>
-            <div className='flex justify-between'>
-              <button className='bg-primary text-slate-50 px-[1rem] py-[.5rem] font-bold rounded-md'>
-                {currentQuestion + 1} <span>Out Of {questions.length}</span>
-              </button>
-              <div className='flex gap-3'>
-                <button
-                  onClick={handlePreviousQuestion}
-                  className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
-                >
-                  <GrFormPreviousLink size={20} />
+            <div className='flex flex-col justify-center gap-[2rem]'>
+              <div className='flex justify-between'>
+                <button className='bg-primary text-slate-50 px-[1rem] py-[.5rem] font-bold rounded-md'>
+                  {currentQuestion + 1} <span>Out Of {questions.length}</span>
                 </button>
-                <button
-                  onClick={handleNextQuestion}
-                  className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
-                >
-                  <GrFormNextLink size={20} />
-                </button>
+                <div className='flex gap-3'>
+                  <button
+                    onClick={handlePreviousQuestion}
+                    className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
+                  >
+                    <GrFormPreviousLink size={20} />
+                  </button>
+                  <button
+                    onClick={handleNextQuestion}
+                    className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
+                  >
+                    <GrFormNextLink size={20} />
+                  </button>
+                </div>
               </div>
+              <>
+                <Link
+                  href='/quizhack'
+                  className='flex items-center justify-center w-full px-[1rem] border-[3px] border-bg-primary text-slate-950  font-bold rounded-md py-[.5rem]'
+                >
+                  <button className=''>Quit Quiz</button>
+                </Link>
+              </>
             </div>
           </div>
         </div>
