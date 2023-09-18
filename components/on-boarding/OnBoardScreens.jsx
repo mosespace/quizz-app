@@ -56,14 +56,19 @@ export default function OnBoardScreens() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className='mySwiper'
+        className='mySwiper w-full lg:w-[50%] h-full flex items-center justify-center'
       >
         {data.map((item, i) => {
           return (
             <SwiperSlide key={i} className=''>
               <div className='flex rounded-b-[3rem] bg-white items-center justify-center h-[60%] overflow-hidden'>
-                <div className='relative h-[400px] w-full'>
-                  <Image src={item.img} alt={item.alt} className='' fill />
+                <div className='relative h-[450px] w-full'>
+                  <Image
+                    src={item.img}
+                    alt={item.alt}
+                    className='w-full h-full object-cover'
+                    fill
+                  />
                 </div>
               </div>
               <div className='flex flex-col gap-[3rem] items-center justify-center'>
@@ -85,7 +90,7 @@ export default function OnBoardScreens() {
       </Swiper>
       <Link
         href='/quizhack'
-        className='rounded-md py-[1.2rem] w-full px-[2rem]'
+        className='rounded-md py-[1.2rem] w-full px-[2rem] lg:w-[50%]'
       >
         <button className='text-center px-[3rem] py-[.8rem] font-semibold text-slate-50 text-[.9rem] bg-[#1f2041] rounded-md w-full shadow-lg uppercase'>
           Play Now
