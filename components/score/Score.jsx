@@ -7,8 +7,8 @@ export default function Score({ score, results }) {
   // console.log(showResults);
 
   return (
-    <div className=' text-center flex pt-[2rem] flex-col justify-center gap-[1.5rem] px-[3rem]'>
-      <div className='relative h-[300px]'>
+    <div className=' text-center flex py-[2rem] flex-col justify-center gap-[1.5rem] px-[3rem] lg:py-0 lg:px-[40rem] lg:h-screen'>
+      <div className='relative h-[300px] lg:h-[350px]'>
         <Image
           src='/score/Score.png'
           alt=''
