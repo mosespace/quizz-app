@@ -38,9 +38,14 @@ export default function Sst() {
     setShowAnswer(false);
     setAnswered(false); // Reset the answered state for the next question
     setCurrentQuestion((currentQuestion) => currentQuestion + 1);
-    if (currentQuestion === questions.length - 1) {
+
+    // Check if the player is on the last question and has answered the current question
+    if (currentQuestion === questions.length - 1 && answered) {
       setShowResults(true);
     }
+    // if (currentQuestion === questions.length - 1 && answered) {
+    //   setShowResults(true);
+    // }
   }
   function handlePreviousQuestion() {
     setShowAnswer(false);
