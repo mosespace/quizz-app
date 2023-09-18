@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Score({ score, results }) {
   // console.log(showResults);
@@ -8,7 +9,7 @@ export default function Score({ score, results }) {
   return (
     <div className=' text-center flex pt-[2rem] flex-col justify-center gap-[1.5rem] px-[3rem]'>
       <div>
-        <img src='/score/Score.png' alt='' />
+        <Image src='/score/Score.png' alt='' />
       </div>
       <div className='font-bold flex flex-col text-2xl gap-[.5rem]'>
         <span>John 😎</span>

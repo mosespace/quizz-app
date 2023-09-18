@@ -20,7 +20,7 @@ module.exports = {
         image: "url(/3264493.jpg)",
       },
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        montserrat: ["Montserrat"],
       },
     },
   },
