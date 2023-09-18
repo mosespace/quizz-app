@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
+import Link from "next/link";
 
 export default function Science() {
   const [currentQuestion, setCurrentQuestion] = useState(0); // First Step -- Sets the current question to be 0 when the app loads at the first time.
