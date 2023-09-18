@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
+import Link from "next/link";
 
 export default function Math() {
   const [currentQuestion, setCurrentQuestion] = useState(0); // First Step -- Sets the current question to be 0 when the app loads at the first time.
@@ -50,7 +51,7 @@ export default function Math() {
   return (
     <>
       {showResults ? (
-        <Score score={score} />
+        <Score score={score} results={singleQuestion} />
       ) : (
         <div className='p-[2rem]'>
           <div className='flex flex-col gap-6'>
@@ -95,24 +96,33 @@ export default function Math() {
                 );
               })}
             </div>
-            <div className='flex justify-between'>
-              <button className='bg-primary text-slate-50 px-[1rem] py-[.5rem] font-bold rounded-md'>
-                {currentQuestion + 1} <span>Out Of {questions.length}</span>
-              </button>
-              <div className='flex gap-3'>
-                <button
-                  onClick={handlePreviousQuestion}
-                  className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
-                >
-                  <GrFormPreviousLink size={20} />
+            <div className='flex flex-col justify-center gap-[2rem]'>
+              <div className='flex justify-between'>
+                <button className='bg-primary text-slate-50 px-[1rem] py-[.5rem] font-bold rounded-md'>
+                  {currentQuestion + 1} <span>Out Of {questions.length}</span>
                 </button>
-                <button
-                  onClick={handleNextQuestion}
-                  className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
-                >
-                  <GrFormNextLink size={20} />
-                </button>
+                <div className='flex gap-3'>
+                  <button
+                    onClick={handlePreviousQuestion}
+                    className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
+                  >
+                    <GrFormPreviousLink size={20} />
+                  </button>
+                  <button
+                    onClick={handleNextQuestion}
+                    className='bg-secondary px-[1rem] py-[.5rem] font-bold rounded-md'
+                  >
+                    <GrFormNextLink size={20} />
+                  </button>
+                </div>
               </div>
+              <>
+                <Link href='/quizhack' className="flex items-center justify-center w-full px-[1rem] border-[3px] border-bg-primary text-slate-950  font-bold rounded-md py-[.5rem]">
+                  <button className=''>
+                    Quit Quiz
+                  </button>
+                </Link>
+              </>
             </div>
           </div>
         </div>
