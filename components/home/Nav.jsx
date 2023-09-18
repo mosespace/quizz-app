@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Ui from "../../public/user.jpg";
+// import Ui from "../../public/sst-quiz.jpg";
 import { usePathname } from "next/navigation";
 import { BsSearch } from "react-icons/bs";
 
