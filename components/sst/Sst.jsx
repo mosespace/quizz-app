@@ -62,7 +62,7 @@ export default function Sst() {
         <Score score={score} results={handleReplay} />
       ) : (
         <div className='p-[2rem] lg:flex lg:flex-col lg:items-center lg:justify-center lg:py-[5rem]'>
-          <div className='flex flex-col gap-6'>
+          <div className='flex flex-col gap-6 lg:w-[35%] overflow-hidden'>
             <span className='font-bold text-2xl text-center uppercase'>
               {singleQuestion.id}. {singleQuestion.question}
             </span>
