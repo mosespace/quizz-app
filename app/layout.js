@@ -1,5 +1,5 @@
 import "./globals.css";
-import Hero from "@/components/Hero";
+import Nav from "@/components/home/Nav";
 
 export const metadata = {
   title: "Quiz App",
@@ -9,8 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className="bg-secondary">
-        <Hero />
+      <body className='font-montserrat'>
+        <Nav />
         {children}
       </body>
     </html>

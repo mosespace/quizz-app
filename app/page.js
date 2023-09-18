@@ -1,10 +1,10 @@
-import SplashScreen from "@/components/SplashScreen";
+import Verification from "@/components/Verification";
 
 export default function Home() {
   return (
     <main className='w-full'>
       <>
-        <SplashScreen />
+        <Verification />
       </>
     </main>
   );
