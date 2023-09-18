@@ -12,19 +12,19 @@ export default function Index() {
       title: "Mathematics",
     },
     {
-      pathname: "/social-studies",
+      pathname: "/sst-quiz",
       image: "/sst.jpg",
       alt: "GPTQuiz social-studies",
       title: "Social Studies",
     },
     {
-      pathname: "/science",
+      pathname: "/science-quiz",
       image: "/science.jpeg",
       alt: "GPTQuiz science",
       title: "Science",
     },
     {
-      pathname: "/cre",
+      pathname: "/cre-quiz",
       image: "/cre.jpeg",
       alt: "GPTQuiz cre",
       title: "CRE",

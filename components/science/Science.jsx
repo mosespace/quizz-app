@@ -1,12 +1,12 @@
 "use client";
 import Score from "../score/Score";
-import questions from "@/constants/MathQuestions";
+import questions from "@/constants/ScienceQuestions";
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 
-export default function Math() {
+export default function Science() {
   const [currentQuestion, setCurrentQuestion] = useState(0); // First Step -- Sets the current question to be 0 when the app loads at the first time.
 
   const singleQuestion = questions[currentQuestion]; // Second Step -- Imports the questions and sets a single question to be the current question.
