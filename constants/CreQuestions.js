@@ -1,33 +1,38 @@
 const questions = [
   {
     id: 1,
-    question: "What is the chemical symbol for water?",
-    options: ["A: Wt", "B: Wa", "C: H2O", "D: O2H"],
-    correct_option: "C: H2O",
+    question: "How many followers did Jesus have??",
+    options: ["A: 11", "B: 10", "C: 3", "D: 12"],
+    correct_option: "D: 12",
   },
   {
     id: 2,
-    question: "Which gas do plants absorb from the atmosphere?",
-    options: ["A: Oxygen", "B: Carbon Dioxide", "C: Nitrogen", "D: Methane"],
-    correct_option: "B: Carbon Dioxide",
+    question: "Who baptized Jesus Christ?",
+    options: [
+      "A: John The Preacher",
+      "B: John The Baptist",
+      "C: John",
+      "D: John The Apostle",
+    ],
+    correct_option: "B: John The Baptist",
   },
   {
     id: 3,
-    question: "What is the smallest planet in our solar system?",
-    options: ["A: Earth", "B: Venus", "C: Mars", "D: Mercury"],
-    correct_option: "D: Mercury",
+    question: "How many chapters does Psalms have?",
+    options: ["A: 150", "B: 50", "C: 60", "D: 160"],
+    correct_option: "A: 150",
   },
   {
     id: 4,
-    question: "Which gas makes up the majority of Earth's atmosphere?",
-    options: ["A: Oxygen", "B: Carbon Dioxide", "C: Nitrogen", "D: Hydrogen"],
-    correct_option: "C: Nitrogen",
+    question: "How many chapters are in the book of Habakkuk?",
+    options: ["A: 1", "B: 2", "C: 3", "D: 4"],
+    correct_option: "C: 3",
   },
   {
     id: 5,
-    question: "What is the chemical symbol for gold?",
-    options: ["A: Ag", "B: Au", "C: Pt", "D: Hg"],
-    correct_option: "B: Au",
+    question: "Did Peter betray Jesus?",
+    options: ["A: Tried", "B: No", "C: Yes", "D: None of the above"],
+    correct_option: "B: No",
   },
 ];
 
