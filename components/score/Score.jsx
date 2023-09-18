@@ -2,11 +2,9 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Score({ score, currentQuestion }) {
-  // console.log(currentQuestion);
-  function handleReplay() {
-    currentQuestion(0);
-  }
+export default function Score({ score, results }) {
+  // console.log(showResults);
+
   return (
     <div className=' text-center flex pt-[2rem] flex-col justify-center gap-[1.5rem] px-[3rem]'>
       <div>
@@ -18,7 +16,7 @@ export default function Score({ score, currentQuestion }) {
       </div>
       <div className='font-bold flex flex-col gap-[1.5rem]'>
         <button
-          onClick={handleReplay}
+          onClick={results}
           className='bg-primary px-[1rem] py-[.8rem] hover:bg-transparent hover:border-2 border-primary transition ease-in-out delay-150 hover:py-[.65rem]'
         >
           Play again
