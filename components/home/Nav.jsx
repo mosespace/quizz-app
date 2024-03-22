@@ -11,7 +11,11 @@ export default function Nav() {
     pathname === "/" ||
     pathname === "/on-boarding-screens" ||
     pathname === "/demo-auth/sign-in/login" ||
-    pathname === "/demo-auth/sign-up/create-account"
+    pathname === "/demo-auth/sign-up/create-account" ||
+    pathname === "/cre-quiz" ||
+    pathname === "/mathematics" ||
+    pathname === "/science-quiz" ||
+    pathname === "/sst"
   )
     return null;
 
